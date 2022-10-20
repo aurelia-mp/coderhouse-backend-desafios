@@ -50,7 +50,9 @@ const usuario = new Usuario(
     ['loro', 'iguana']
 )
 
-console.log(usuario.countMascota())
-console.log(usuario.getFullName())
+console.log("Nombre completo: " + usuario.getFullName())
+console.log("Cantidad de mascotas: " + usuario.countMascota())
 usuario.addBook("Ana Karenina", "Tolstoi")
-console.log(usuario.getBookNames())
+console.log("Libros leídos: " + usuario.getBookNames())
+usuario.addMascota('gato')
+console.log("Nueva cantidad de mascotas: " + usuario.countMascota())
